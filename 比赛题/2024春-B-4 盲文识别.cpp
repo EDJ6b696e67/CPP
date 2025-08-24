@@ -14,7 +14,6 @@ char num[10][4] = {
     {'.','*','*','.'},
     {'.','*','*','*'}
 };
-
 int checkcharactor(vector<vector<char>> c, int i, int j){
     if(c[i+2][j] != '.' || c[i+2][j+1] != '.'){
         return -1;
@@ -26,7 +25,6 @@ int checkcharactor(vector<vector<char>> c, int i, int j){
     }
     return -1; // 没有匹配到任何字符
 }
-
 signed main(){
     int n, m;
     cin >> n >> m;
