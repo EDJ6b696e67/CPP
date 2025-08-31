@@ -2,14 +2,17 @@
 using namespace std;
 #define int long long
 #define endl '\n'
+
 int minglishu(char c){
     int a = c - 'a';
     return a%9 + 1;
 }
+
 bool check(int mls){
     if((0 < mls && mls < 10) || mls == 11 || mls == 22) return true;
     return false;
 }
+
 signed main(){
     int n;
     cin >> n;

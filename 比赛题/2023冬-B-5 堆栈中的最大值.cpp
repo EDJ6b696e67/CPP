@@ -2,10 +2,12 @@
 using namespace std;
 #define int long long
 #define endl '\n'
+
 // 主栈存储元素
 stack<int> s;
 // 辅助栈存储当前的最大值（与主栈元素一一对应）
 stack<int> max_stack;
+
 signed main(){
     int n;
     cin >> n;

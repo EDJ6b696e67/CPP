@@ -2,12 +2,14 @@
 using namespace std;
 #define int long long
 #define endl "\n"
+
 // 定义一个结构体来存储方案信息
 struct SchemeInfo {
     bool valid;
     int diag_sum;
     int id;
 };
+
 signed main(){
     int n, m;
     cin >> n >> m;

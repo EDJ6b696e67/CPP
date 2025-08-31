@@ -2,10 +2,13 @@
 using namespace std;
 #define int long long
 #define endl '\n'
+
 const int M = 99;
+
 int mod(int a){
     return a % M;
 }
+
 // 从右边开始切分：将数字从右向左每两位一组（剩余最后一组可能只有1位），求各组数字之和
 int cut_from_right(string s){
     int sum = 0;
@@ -19,6 +22,7 @@ int cut_from_right(string s){
     }
     return sum;
 }
+
 // 从左边开始切分：将数字从左向右每两位一组（最后一组可能只有1位），求和
 int cut_from_left(string s){
     int sum = 0;
@@ -33,6 +37,7 @@ int cut_from_left(string s){
     }
     return sum;
 }
+
 signed main(){
     int n;
     cin >> n;

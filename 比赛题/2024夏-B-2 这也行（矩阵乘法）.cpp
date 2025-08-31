@@ -2,6 +2,7 @@
 using namespace std;
 #define int long long
 #define endl '\n'
+
 // 矩阵乘法
 vector<vector<int>> operator*(const vector<vector<int>>& a, const vector<vector<int>>& b) {
     int n = a.size(), m = a[0].size(), p = b[0].size();
@@ -15,6 +16,7 @@ vector<vector<int>> operator*(const vector<vector<int>>& a, const vector<vector<
     }
     return c;
 }
+
 // 检查矩阵格式
 bool checkMatrixFormat(const vector<vector<int>>& result, const vector<vector<int>>& a) {
     if(result[0][0] == a[0][0]*11 && result[0][1] == a[0][1]*11 &&
@@ -26,6 +28,7 @@ bool checkMatrixFormat(const vector<vector<int>>& result, const vector<vector<in
         return false;
     }
 }
+
 signed main(){           
     int n;
     cin >> n;

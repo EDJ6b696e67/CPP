@@ -1,11 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
+
 // 预处理：去掉 "0." 并补齐位数
 string getDecimalPart(const string &s) {
     // 假设 s 格式始终为 "0.xxx"
     return s.substr(2);
 }
+
 int checkbigger(string a, string b){
     for(int i = 0; i < min(a.size(),b.size()); i++){
         if(a[i] > b[i]) return 1;
@@ -13,6 +15,7 @@ int checkbigger(string a, string b){
     }
     return 2; // equal
 }
+
 string subtraction(string a, string b){
     string ans = "";
     int carry = 0;
@@ -31,11 +34,13 @@ string subtraction(string a, string b){
     reverse(ans.begin(), ans.end());
     return ans;
 }
+
 void swap(string &a, string &b){
     string temp = a;
     a = b;
     b = temp;
 }
+
 signed main(){
     string a,b;
     cin >> a >> b;

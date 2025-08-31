@@ -2,6 +2,7 @@
 using namespace std;
 #define int long long
 #define endl '\n'
+
 int findspace(string s){
     for(int i = 0; i < s.size(); i++){
         if(s[i] == ' '){
@@ -10,6 +11,7 @@ int findspace(string s){
     }
     return -1; // 没有空格
 }
+
 signed main(){
     int n;
     cin >> n;
