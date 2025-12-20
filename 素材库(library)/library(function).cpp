@@ -19,7 +19,27 @@ int transform(string s){
     return res;
 }
 
+int calculate_length(int x){
+    int length = 0;
+    while(x){
+        length++;
+        x /= 10;
+    }
+    return length;
+}
 
+bool is_int(double x){
+    return floor(x) == x;
+}
+
+int sum_per_digit(int x){
+    int sum = 0;
+    while(x){
+        sum += x % 10;
+        x /= 10;
+    }
+    return sum;
+}
 
 signed main(){
     
