@@ -3,6 +3,16 @@ using namespace std;
 #define int long long
 #define endl "\n"
 
+int max_in_line(vector<int> &line){
+    int max_val = line[0];
+    for(int val : line){
+        if(val > max_val){
+            max_val = val;
+        }
+    }
+    return max_val;
+}
+
 bool is_prime(int x){
     if(x < 2) return false;
     for(int i = 2; i * i <= x; i++){
