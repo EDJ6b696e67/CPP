@@ -38,10 +38,6 @@ int calculate_length(int x){
     return length;
 }
 
-bool is_int(double x){
-    return floor(x) == x;
-}
-
 int sum_per_digit(int x){
     int sum = 0;
     while(x){
