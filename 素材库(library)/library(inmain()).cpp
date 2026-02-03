@@ -3,6 +3,8 @@ using namespace std;
 #define int long long
 #define endl "\n"
 
+const int MOD = 1e9 + 7;
+
 signed main(){
     double num; //浮点数
     string s; //字符串

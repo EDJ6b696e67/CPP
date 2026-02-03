@@ -3,6 +3,8 @@ using namespace std;
 #define int long long
 #define endl "\n"
 
+const int MOD = 1e9 + 7;
+
 int max_in_line(vector<int> &line){
     int max_val = line[0];
     for(int val : line){
@@ -21,14 +23,6 @@ bool is_prime(int x){
     return true;
 }
 
-int transform(string s){
-    int res = 0;
-    for(char c : s){
-        res = res * 10 + (c - '0');
-    }
-    return res;
-}
-
 int calculate_length(int x){
     int length = 0;
     while(x){
@@ -45,6 +39,17 @@ int sum_per_digit(int x){
         x /= 10;
     }
     return sum;
+}
+
+int modpow(int a, int b){
+    int res = 1;
+    a %= MOD;
+    while(b > 0){
+        if(b & 1) res = (res * a) % MOD;
+        a = (a * a) % MOD;
+        b >>= 1;
+    }
+    return res;
 }
 
 signed main(){
