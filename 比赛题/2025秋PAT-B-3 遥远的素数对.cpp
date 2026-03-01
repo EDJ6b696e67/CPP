@@ -43,6 +43,7 @@ bool is_prime(int a){
     }
     return true;
 }
+
 signed main(){
 
     int c, d;
