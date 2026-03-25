@@ -31,9 +31,6 @@ int solve(int n) {
 }
 
 signed main() {
-    ios::sync_with_stdio(false); // 加速cin/cout
-    cin.tie(nullptr);
-    
     int t;
     cin >> t;
     while (t--) {
