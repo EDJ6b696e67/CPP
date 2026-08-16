@@ -1,0 +1,6 @@
+3 4
+10 20 15
+100 is the root
+100 and 20 are siblings
+100 is the parent of 15
+10 is the left child of 100

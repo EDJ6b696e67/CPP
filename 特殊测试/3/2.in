@@ -1,0 +1,9 @@
+6 7
+-10000 10000 0 -5000 5000 3000
+10000 is the root
+5000 and 3000 are siblings
+5000 is the parent of -5000
+-10000 is the left child of 5000
+0 is the right child of 3000
+-10000 and 0 are siblings
+3000 is the left child of 10000

@@ -1,0 +1,7 @@
+4 5
+-5 -3 -10 -1
+-1 is the root
+-3 is the left child of -1
+-5 is the right child of -1
+-10 and -5 are siblings
+-3 is the parent of -5
